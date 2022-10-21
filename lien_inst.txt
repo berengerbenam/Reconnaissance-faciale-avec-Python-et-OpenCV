@@ -1,0 +1,5 @@
+https://data-flair.training/blogs/python-face-recognition/  lien_code
+pip3 install face_recognition
+
+
+https://projectgurukul.org/deep-learning-project-face-recognition-with-python-opencv/
