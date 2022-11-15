@@ -1,0 +1,119 @@
+apt install python3
+
+apt install python3-pip
+
+apt install qrencode
+
+apt install pyzbar
+
+pip3 install numpy
+
+pip3 install cmake
+
+pip3 install scikit-build
+
+pip3 install pyzbar
+
+pip3 install dlib
+
+pip3 install face-recognition
+pt-get install python3-pil.imagetk
+pip3 install opencv-contrib-python
+pip3 install mysql-connector
+pip3 install pillow
+pip3 install face_recognition
+apt install python3-tk
+apt install python3
+apt install python3-pip
+apt install qrencode
+apt install pyzbar
+pip3 install numpy
+pip3 install cmake
+pip3 install scikit-build
+pip3 install pyzbar
+pip3 install dlib
+apt-get install python3-pymysql
+pip3 install mysql-connector
+apt-get install python3-tk
+
+########################################################################################## TWO ###################################################""
+PARTIE II (BASE DE DONNÉÉ)
+
+°#########################################################"
+https://www.youtube.com/watch?v=dpkHHqXRVy4 //lien youtube vid
+https://www.youtube.com/watch?v=dpkHHqXRVy4 //idem
+
+
+##############################################################
+
+mysql>
+mysql> create database face_recognition;
+Query OK, 1 row affected (0,16 sec)
+
+mysql> use face_recognition;
+Database changed
+mysql> create table student(student_ID int primary key,Name varchar(50),Department varchar(50),Course varchar(50),Year varchar(50),Semester varchar(50),Division varchar(50),Gender varchar(50),DOB varchar(50),Mobile_No varchar(50),Address varchar(50),Roll_No varchar(50),Email varchar(50),Teacher_Name varchar(50),PhotoSample varchar(50));
+Query OK, 0 rows affected (1,19 sec)
+
+mysql>
+mysql> create table stdattendance(std_id int primary key auto_increment,std_roll_no varchar(50),std_name varchar(50),std_time time,std_date date,std_attendance varchar(50));
+Query OK, 0 rows affected (0,65 sec)
+
+mysql>
+mysql> create table regteach(frame varchar(60),iname varchar(50),cnum varchar(50),email varchar(50),ssq varchar(50),sa varchar(50),pwd varchar(50));
+Query OK, 0 rows affected (0,63 sec)
+
+mysql>
+mysql> grant all privileges on face_recognition.* to admin;
+Query OK, 0 rows affected (0,13 sec)
+
+mysql> flush privileges;
+Query OK, 0 rows affected (0,05 sec)
+
+mysql> select * from regteach;
++----------+-------+-----------+-------------------------+--------------------+------+------+
+| frame    | iname | cnum      | email                   | ssq                | sa   | pwd  |
++----------+-------+-----------+-------------------------+--------------------+------+------+
+| Berenger | Benam | 781152932 | berengerbenam@gmail.com | Your Favorite Book | 1234 | 1234 |
++----------+-------+-----------+-------------------------+--------------------+------+------+
+1 row in set (0,00 sec)
+
+mysql> show tables;
++----------------------------+
+| Tables_in_face_recognition |
++----------------------------+
+| regteach                   |
+| stdattendance              |
+| student                    |
++----------------------------+
+3 rows in set (0,00 sec)
+
+mysql> select * from stdattendance;
+Empty set (0,00 sec)
+
+mysql> select * from student;
++------------+-------+------------+--------+---------+------------+----------+--------+------------+------------+----------+------------+-----------------+--------------+-------------+
+| student_ID | Name  | Department | Course | Year    | Semester   | Division | Gender | DOB        | Mobile_No  | Address  | Roll_No    | Email           | Teacher_Name | PhotoSample |
++------------+-------+------------+--------+---------+------------+----------+--------+------------+------------+----------+------------+-----------------+--------------+-------------+
+|          1 | Nasry | BSCS       | SE     | 2018-22 | Semester-1 | Morning  | Male   | 01/20/2004 | 3000000000 | liberte4 | nas666mm55 | nasry@gmail.com | nasry Ahamdi | No          |
++------------+-------+------------+--------+---------+------------+----------+--------+------------+------------+----------+------------+-----------------+--------------+-------------+
+1 row in set (0,00 sec)
+
+mysql> select * from regteach;
++----------+-------+-----------+-------------------------+--------------------+------+------+
+| frame    | iname | cnum      | email                   | ssq                | sa   | pwd  |
++----------+-------+-----------+-------------------------+--------------------+------+------+
+| Berenger | Benam | 781152932 | berengerbenam@gmail.com | Your Favorite Book | 1234 | 1234 |
++----------+-------+-----------+-------------------------+--------------------+------+------+
+1 row in set (0,00 sec)
+
+mysql>
+
+
+
+
+
+
+
+
+
